@@ -12,7 +12,7 @@
             <ul class="vertical medium-horizontal menu expanded text-center">
                 <li><a href="index.html"><i class="fi-list"></i> <span>About</span></a></li>
                 <li><a href="projects.html"><i class="fi-list"></i> <span>Projects</span></a></li>
-                <li><a href="hobbies.html"><i class="fi-list"></i> <span>Hobbies</span></a></li>
+                <li><a href="fun.html"><i class="fi-list"></i> <span>Fun</span></a></li>
                 <li><a href="resume.html"><i class="fi-list"></i> <span>Resume</span></a></li>
             </ul>
         </div>
@@ -24,8 +24,102 @@
         </div>
     </nav>
 
-    <main>
-        <h2 class="page-header">My Resume</h2>
+    <main class="resume-content row text-center">
+        <h2 class="page-header small-12">My Resume</h2>
+        <h3 class="education small-12">Education</h3>
+        <div class="grid-x align-center">
+            <div class="cell small-12 medium-6 large-4">
+                <img src="images/download.png" alt="University of St Thomas logo">
+                <h4 class="small-4">
+                    <a href="https://www.stthomas.edu/" target="_blank">University of St Thomas</a>
+                    </h4>
+                <p class="">Bachelors of Computer Science</p>
+                <p>GPA: 3.64</p>
+                <p class="">September 2022 - December 2024</p>
+            </div>
+            <div class="cell small-12 medium-6 large-4">
+                <img src="images/inverhills.png" alt="Inver Hills Community College">
+                <h4 class="small-4">
+                    <a href="https://inverhills.edu/" target="_blank">Inver Hills Community College</a>
+                    </h4>
+                <p class="">Associates of Computer Science</p>
+                <p class="">January 2022 - May 2022</p>
+            </div>
+            <div class="cell small-12 medium-6 large-4">
+
+                <img src="images/umgc.png" alt="University of Maryland Global Campus">
+                <h4 class="small-4">
+                    <a href="https://www.umgc.edu/" target="_blank">University of Maryland Global Campus</a>
+                    </h4>                
+                    <p class="">Bachelors of Computer Science</p>
+                <p class="">October 2020 - November 2021</p>
+            </div>
+          </div>
+          <h3 class="education small-12">Experience</h3>
+          <div class="grid-x align-center">
+            <div class="cell small-12 medium-6 large-4">
+                <img src="images/ec2.png" alt="AWS logo"/>
+                <h4 class="small-4">Amazon Web Services - EC2 Core Platform</h4>
+                <h5>Software Engineering Intern</h5>
+                <p class="">June 2023 - August 2023</p>
+                <ul>
+                    <li>Created microservice that detects and notifies team of 
+                        EC2 instance types not in static stability testing framework 
+                        with Java and a NoSQL database, saving 9 developer hours per month.
+                    </li>
+                    <li>Utilized JUnit and Mockito to write and update 10 unit tests, 
+                        ensuring over 80\% code coverage.
+                    </li>
+                    <li>
+                        Created a dashboard with React hosted on EC2 to display results of 
+                        the automated workflow.
+                    </li>
+                    <li>
+                        Wrote a runbook with FAQ, known issues, and AWS CloudWatch alarms to 
+                        ensure an easy handover with the team.
+                    </li>
+                    <li>
+                        Utilized AWS EventBridge, StepFunctions, and SNS to trigger workflow 
+                        automatically and distribute notifications via email to 8 team members.
+                    </li>
+                </ul>
+            </div>
+            <div class="cell small-12 medium-6 large-4">
+                <img src="images/ang.png" alt="Air National Guard logo"/>
+                <h4 class="small-4">Minnesota Air National Guard</h4>
+                <h5>Software Engineering Intern</h5>
+                <p class="">January 2022 - Present</p>
+                <ul>
+                    <li>Created a program in Excel to compute value of accrued leave and fill 
+                        in processing paperwork, calculated over $56,000 in leave for 412 
+                        employees and saved 206 technician hours.
+                    </li>
+                    <li>
+                        Automated finance form completion for new hires with Adobe Acrobat and 
+                        JavaScript, saving finance technicians and new employees 25 hours per month.
+                    </li>
+                </ul>
+            </div>
+            <div class="cell small-12 medium-6 large-4">
+                <img src="images/department-of-the-air-force-logo-png-transparent.png" alt="USAF logo"/>
+                <h4 class="small-4">United States Air Force</h4>
+                <h5>Cryptologic Language Analyst</h5>
+                <p class="">January 2016 - January 2022</p>
+                <ul>
+                    <li>
+                        Used foreign language skills to find, identify, and process communications 
+                        involving activities of interest.
+                    </li>
+                    <li>
+                        Mentored junior language analysts by leading training events and conducting 
+                        quality assurance checks, lowered translation time by 20%.
+                    </li>
+                </ul>
+            </div>
+          </div>
+
+
+        
     </main>
 
     <!-- include before closing <body> tag -->
