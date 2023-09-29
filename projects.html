@@ -9,20 +9,114 @@
 <body>
     <nav>            
         <div class="menubar">
-            <ul class="vertical medium-horizontal menu expanded">
+            <ul class="vertical medium-horizontal menu expanded text-center">
                 <li><a href="index.html"><i class="fi-list"></i> <span>About</span></a></li>
                 <li><a href="projects.html"><i class="fi-list"></i> <span>Projects</span></a></li>
                 <li><a href="hobbies.html"><i class="fi-list"></i> <span>Hobbies</span></a></li>
                 <li><a href="resume.html"><i class="fi-list"></i> <span>Resume</span></a></li>
             </ul>
         </div>
-        <div class="large-expanded">
-            <h1 class="text-center">Alec Krieger's Website</h1>
+        <div class="header-image">
+            <div class="header-text">
+                <h1>I'm Alec Krieger</h1>
+                <p>Developer | Student | Veteran</p>
+            </div>
         </div>
     </nav>
 
-    <main>
-        <h2 class="page-header">My Projects</h2>
+    <main class="grid-container">
+        <ul class="accordion align-center grid-x grid-margin-x small-12 medium-up-3" data-accordion data-allow-all-closed="true">
+            <li class="accordion-item column" data-accordion-item>
+              <a href="#" class="accordion-title ">
+                <div class="card">
+                    <div class="card-divider">
+                      <h4>Solar Capital</h4>
+                    </div>
+                    <img src="images/group-pic.png">
+                  </div>
+              </a>
+              <div class="accordion-content" data-tab-content>
+                <p>
+                    The notifier worked by collecting new EC2 types from several 
+                    different internal services and fused the information together. 
+                    Then it sorted out the instance types already ingested into the 
+                    team’s testing framework. The dashboard displayed the list as is 
+                    but the email notifier divided the list further into instance 
+                    types with recently updated launch dates that merited further 
+                    attention. 
+                </p>
+              </div>
+            </li>
+
+            <li class="accordion-item column" data-accordion-item>
+                <a href="#" class="accordion-title">
+                  <div class="card">
+                      <div class="card-divider">
+                        <h4>New Instance Types Notifier</h4>
+                      </div>
+                      <img src="images/ec2.png">
+                    </div>
+                </a>
+                <div class="accordion-content" data-tab-content>
+                  <p class="">
+                    I developed the New Instance Types Notifier while I 
+                    interned at AWS for EC2’s Static Stability team during 
+                    the summer of 2023. The Notifier is a workflow automation 
+                    microservice designed to eliminate a weekly chore for the
+                    Static Stability team and allow them to focus on the team’s 
+                    important problems.</p>
+
+                    <p>
+                        I received my project in June 2023 and was responsible 
+                        for developing it from end-to-end, including collecting 
+                        requirements from my team, writing and rewriting my design 
+                        document, and developing and iterating upon the end product. 
+                        The notifier had two parts, one ran autonomously on EC2 and 
+                        sent email updates to the team every week. The other part 
+                        was mounted on the team’s dashboard and integrated with its 
+                        backend API.
+                    </p>
+                    <p>
+                        The notifier worked by collecting new EC2 types from several 
+                        different internal services and fused the information together. 
+                        Then it sorted out the instance types already ingested into the 
+                        team’s testing framework. The dashboard displayed the list as is 
+                        but the email notifier divided the list further into instance 
+                        types with recently updated launch dates that merited further 
+                        attention. 
+                    </p>
+                </div>
+              </li>
+
+              <li class="accordion-item column" data-accordion-item>
+                <a href="#" class="accordion-title">
+                  <div class="card">
+                      <div class="card-divider">
+                        <h4>Nym Jumper</h4>
+                      </div>
+                      <img src="images/wordnet.png">
+                    </div>
+                </a>
+                <div class="accordion-content" data-tab-content>
+                    <p>
+                        I was inspired to make this game by playing the New York Time’s 
+                        crossword puzzle with my ski club on our trips. I knew I wanted to 
+                        make a game that I could imagine my teammates playing. I based the 
+                        game on the wikipedia game where a person uses links between wikipedia
+                        pages to navigate the site between a beginning and destination page.
+                        However with this game a person uses synonyms or antonyms between words
+                        to jump to a destination word.
+                    </p>
+                    <p>
+                        To make the game I used python's FastAPI library to create a barebones API
+                        that can query Natual Language Tool Kit's (NLTK) wordnet library to find a 
+                        list of synonyms and antonyms for words. The synonyms are in lists called 
+                        synsets that have distinct semmantic meanings. I made the game itself in
+                        react and it sends API calls every time the play wants to move to a new word.
+                    </p>
+                </div>
+              </li>
+          </ul>
     </main>
 
     <!-- include before closing <body> tag -->

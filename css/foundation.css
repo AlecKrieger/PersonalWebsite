@@ -3896,6 +3896,7 @@ select:not([multiple]) {
   border-bottom: 0;
   background-color: #fefefe;
   color: #0a0a0a;
+  max-width: 27.5em;
 }
 :last-child > .accordion-content:last-child {
   border-bottom: 1px solid #e6e6e6;
@@ -4355,6 +4356,8 @@ select:not([multiple]) {
           box-shadow: none;
   overflow: hidden;
   color: #0a0a0a;
+  max-width:33.75em;
+  min-width:33.75em;
 }
 .card > :last-child {
   margin-bottom: 0;
@@ -4371,6 +4374,7 @@ select:not([multiple]) {
           flex: 0 1 auto;
   padding: 1rem;
   background: #e6e6e6;
+  text-align: center;
 }
 .card-divider > :last-child {
   margin-bottom: 0;
